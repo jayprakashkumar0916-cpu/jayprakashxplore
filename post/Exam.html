@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jayprakash Xplore - IIT JEE vs NEET Comparison</title>
+<meta name="description" content="Jayprakash Xplore पर IIT JEE और NEET की पूरी जानकारी और tips। All content original और copyright-free।">
+<style>
+body{font-family:'Segoe UI',sans-serif;background:#f4f7f9;margin:0;padding:20px;color:#333;}
+.container{max-width:800px;margin:auto;background:#fff;padding:25px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.1);}
+h1{text-align:center;color:#1b2b47;margin-bottom:25px;}
+.cards{display:flex;flex-wrap:wrap;gap:15px;justify-content:center;}
+.card{flex:1 1 45%;min-width:250px;padding:20px;border-radius:10px;color:#fff;box-shadow:0 5px 15px rgba(0,0,0,0.1);transition:transform 0.2s;}
+.card:hover{transform:translateY(-5px);}
+.jee{background:linear-gradient(135deg,#ff6b6b,#f06595);}
+.neet{background:linear-gradient(135deg,#4ecdc4,#1a535c);}
+.card h2{margin-top:0;}
+ul{padding-left:20px;margin:10px 0;}
+.btn{padding:10px 18px;font-weight:bold;border:none;border-radius:8px;cursor:pointer;font-size:14px;transition:0.3s;margin-top:10px;}
+.btn:hover{transform:scale(1.05);}
+.jee-btn{background:#ff4757;color:#fff;}
+.neet-btn{background:#1dd1a1;color:#fff;}
+#tips{margin-top:20px;padding:15px;border-left:5px solid #4a90e2;border-radius:8px;background:#f0f4ff;}
+@media(max-width:768px){.cards{flex-direction:column;}}
+.footer{margin-top:25px;text-align:center;font-size:14px;color:#777;}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Jayprakash Xplore: IIT JEE vs NEET Comparison</h1>
+
+<div class="cards">
+<div class="card jee">
+<h2>IIT JEE</h2>
+<ul>
+<li>Physics, Chemistry, Maths</li>
+<li>6 घंटे, Concept-heavy</li>
+<li>B.Tech/Engineering Entry</li>
+</ul>
+<button class="btn jee-btn" onclick="showTip('jee')">टिप्स देखें</button>
+</div>
+
+<div class="card neet">
+<h2>NEET</h2>
+<ul>
+<li>Physics, Chemistry, Biology</li>
+<li>3 घंटे, Biology-heavy</li>
+<li>MBBS/BDS Entry</li>
+</ul>
+<button class="btn neet-btn" onclick="showTip('neet')">टिप्स देखें</button>
+</div>
+</div>
+
+<div id="tips">
+<h3>आज के टिप्स:</h3>
+<p>ऊपर बटन क्लिक करें और तुरंत exam के लिए latest tips पाएं।</p>
+</div>
+
+<div class="footer">
+&copy; 2026 Jayprakash Xplore. All rights reserved. | Website: <a href="https://jayprakashkumar0916-cpu.github.io/jayprakashxplore/" target="_blank">https://jayprakashkumar0916-cpu.github.io/jayprakashxplore/</a> | Email: <a href="mailto:jayprakashkumar0916@gmail.com">jayprakashkumar0916@gmail.com</a>
+</div>
+</div>
+
+<script>
+function showTip(exam){
+const tips=document.getElementById('tips');
+if(exam==='jee'){
+tips.innerHTML=`<h3>IIT JEE टिप्स:</h3>
+<ul>
+<li>Physics में Concept + NCERT Practice</li>
+<li>Chemistry में Organic & Physical Revision</li>
+<li>Maths में Previous Papers & Time Management</li>
+<li>Weekly Mock Test ज़रूर</li>
+</ul>`;
+}else if(exam==='neet'){
+tips.innerHTML=`<h3>NEET टिप्स:</h3>
+<ul>
+<li>Biology NCERT अच्छे से पढ़ो</li>
+<li>Physics & Chemistry Daily Practice</li>
+<li>Previous Year Papers देखें</li>
+<li>Weekly Full Mock Test करें</li>
+</ul>`;
+}
+}
+</script>
+</body>
+</html>
